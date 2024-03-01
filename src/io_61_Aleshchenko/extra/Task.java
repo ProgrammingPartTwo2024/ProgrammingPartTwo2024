@@ -3,7 +3,7 @@ package io_61_Aleshchenko.extra;
 public class Task {
     public static void main(String[] args) {
 //        ==================== Завдання: змінити(!) один(!) символ, щоб вивелося 20 зірочок
-//        (в Java - 2 розв'язки, а в С/С++ - 3 розв'язки)
+//        (в Java - 2 розв'язки, а в С/С++ - 3 розв'язки (минулі 2 + 1 специфічний))
         int n = 20;
         for (int i = 0; i < n; i--) {
             print("*");
