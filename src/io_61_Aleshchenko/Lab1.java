@@ -32,11 +32,12 @@ public class Lab1 {
         double s = 0;
         for (int i = a; i <= n; ++i) {
             for (int j = b; j <= m; j++) {
-                if (j != 0 && i - C != 0) {
+//                todo ! && vs. &
+                if (j != 0 & i - C != 0) {
                     s += (double) i / j / (i - C);
                 } else {
                     System.out.println("Error: division by zero");
-//                    todo use return
+//                    todo use return or flag
                     break;
                 }
             }
