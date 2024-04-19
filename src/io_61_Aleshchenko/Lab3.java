@@ -22,10 +22,11 @@ public class Lab3 {
             }
         }*/
 
-        StringBuilder stringBuilder = new StringBuilder("Мій текст");
+//        StringBuilder stringBuilder = new StringBuilder("Мій текст");
+        /*StringBuilder stringBuilder = new StringBuilder("My text hell");
 //        stringBuilder.toString().matches("\\b[^ ]{2}\\b", )
 //        Pattern.matches()
-        int wordLength = 5;
+        int wordLength = 4;
 
 //        Pattern pattern = Pattern.compile("\\b\\w{" + wordLength + "}\\b");
         Pattern pattern = Pattern.compile("\\b[^ ]{" + wordLength + "}\\b");
@@ -34,6 +35,10 @@ public class Lab3 {
 
         while (matcher.find()) {
             System.out.println(matcher.group());
-        }
+        }*/
+
+//        String s = "My text hell";
+        String s = "Мій текст";
+        final String[] split = s.split("\\b");
     }
 }
