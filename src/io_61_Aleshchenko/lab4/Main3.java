@@ -8,6 +8,6 @@ public class Main3 {
         System.out.println(args[2]);
         System.out.println(args[3]);*/
 
-        Main2.main(null);
+//        Main2.main(null);
     }
 }
