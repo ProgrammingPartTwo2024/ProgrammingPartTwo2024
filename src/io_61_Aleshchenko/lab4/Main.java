@@ -1,5 +1,7 @@
 package io_61_Aleshchenko.lab4;
 
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -8,8 +10,7 @@ import java.util.Set;
     //    todo 1: 5 fields
     //    todo 2: array+sort
     //    todo 3: JCC
-
-
+    //    todo 4: toString
 
     public static void main(String[] args) {
         /*for (int i = 0; i < 19; i++) {
@@ -21,8 +22,31 @@ import java.util.Set;
             System.out.println(arr[i]);
         }*/
 
-        Computer/*<Integer>*/ computer = new Computer(true, 11);
-        Computer computer2 = new Computer(false, 0);
+//        Computer/*<Integer>*/ computer = new Computer(true, 11);
+        Computer computer3 = new Computer();
+        computer3.setTurnedOn(true);
+        computer3.setPower(11);
+
+        Computer[] computers = new Computer[3];
+        computers[0] = computer3;
+        computers[1] = new Computer();
+        computers[2] = new Computer(false, 10);
+
+        for (Computer computer : computers) {
+            System.out.println(computer);
+        }
+
+        //sort computers Arrays
+        Comparator<Computer> computerComparator = Comparator.comparing(Computer::isTurnedOn).reversed();
+        Arrays.sort(computers, Comparator.comparingInt(Computer::getPower).thenComparing(computerComparator));
+
+        for (Computer computer : computers) {
+            System.out.println(computer);
+        }
+
+
+
+//        Computer computer2 = new Computer(false, 0);
 //        computer.turnedOn = true;
 //        computer.setTurnedOn(true);
 

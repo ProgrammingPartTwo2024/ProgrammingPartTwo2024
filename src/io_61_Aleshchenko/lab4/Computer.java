@@ -16,6 +16,11 @@ public class Computer/*<T>*/ {
         this.power = power;
     }
 
+    public Computer() {
+        this.turnedOn = true;
+        this.power = 10;
+    }
+
     public boolean isTurnedOn() {
         return turnedOn;
     }
@@ -35,4 +40,26 @@ public class Computer/*<T>*/ {
     public int getPower() {
         return power;
     }
+
+    public void setPower(int power) {
+        this.power = power;
+    }
+
+    /*@Override
+    public String toString() {
+        return "Computer{" +
+                "turnedOn=" + turnedOn +
+                ", power=" + power +
+                '}';
+    }*/
+
+    @Override
+    public String toString() {
+        return "Computer{" +
+                "turnedOn=" + turnedOn +
+                ", power=" + power +
+                '}';
+    }
+
+
 }
